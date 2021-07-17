@@ -11,10 +11,12 @@ export default function Form(props) {
 
       <form id="pizza-form" onSubmit={submit}>
         <label>
-          Name
+          Name{" "}
           <input onChange={change} id="name-input" name="name" type="text" />
         </label>
         <label>
+          Select The Pizza Size!
+          <br />
           <select onChange={change} id="size-dropdown" name="size">
             <option>--Select the pizza size--</option>
             <option value="large">Large</option>
@@ -23,6 +25,8 @@ export default function Form(props) {
           </select>
         </label>
         <label>
+          Please choose toppinngs!
+          <br />
           <input
             onChange={change}
             type="checkbox"
@@ -60,7 +64,9 @@ export default function Form(props) {
         </label>
         <label>
           Speacial Request
+          <br />
           <input
+            className="box"
             onChange={change}
             id="special-text"
             name="special"
@@ -73,8 +79,6 @@ export default function Form(props) {
       <div style={{ color: "red" }}>
         <div>{errors.name}</div>
         <div>{errors.size}</div>
-        {/* <div>{errors.password}</div>
-        <div>{errors.agree}</div>  */}
       </div>
     </div>
   );

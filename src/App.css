@@ -5,12 +5,19 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Otomanopee One", sans-serif;
 }
 
 .App {
   font-family: sans-serif;
   height: 100%;
   width: 100%;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+h1 {
+  color: red;
 }
 
 nav {
@@ -29,7 +36,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #1c5d76;
+  color: red;
   font-weight: bold;
   margin-right: 8px;
 }
@@ -63,91 +70,6 @@ nav {
   width: 115px;
 }
 
-.items-list-wrapper {
-  margin-top: 36px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.item-card {
-  width: 250px;
-  margin: 0 10px 32px;
-  cursor: pointer;
-}
-
-.item-card p {
-  margin: 0 0 4px;
-  text-align: left;
-  color: #595959;
-}
-
-.items-list-image {
-  width: 100%;
-  border: 1px solid lightgray;
-}
-
-.item-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.item-header {
-  display: flex;
-}
-
-.item-header h2,
-.item-header h4 {
-  color: #1c5d76;
-  margin: 0;
-}
-
-.item-header h4 {
-  margin-top: 16px;
-}
-
-.item-sub-nav {
-  border-bottom: 1px solid #a1d5d4;
-  justify-content: center;
-}
-
-.item-sub-nav a {
-  color: #a5a5a5;
-  text-decoration: none;
-  padding: 12px;
-}
-
-.item-sub-nav a.active {
-  color: #1c5d76;
-  font-weight: bold;
-}
-
-.item-sub-nav a:first-of-type {
-  margin-right: 32px;
-}
-
-.item-card a {
-  text-decoration: none;
-}
-
-.image-wrapper {
-  width: 50%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.item-title-wrapper {
-  width: 50%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-}
-
-.item-details {
-  max-width: 720px;
-  margin: 32px auto;
-}
-
 /* material design button */
 .md-button {
   position: relative;
@@ -164,7 +86,7 @@ nav {
   text-overflow: ellipsis;
   text-transform: uppercase;
   color: #fff;
-  background-color: #1c5d76;
+  background-color: red;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui,
@@ -176,6 +98,7 @@ nav {
   outline: none;
   cursor: pointer;
   transition: box-shadow 0.2s;
+  font-family: "Otomanopee One", sans-serif;
 }
 
 .md-button:hover,
@@ -250,10 +173,22 @@ nav {
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  /* border: 1px solid black; */
 }
 #pizza-form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  width: 70%;
+  line-height: 2;
+  font-size: 20px;
+  /* border: 1px solid black; */
+}
+
+.box {
+  border: 1px solid black;
+  width: ;
 }
