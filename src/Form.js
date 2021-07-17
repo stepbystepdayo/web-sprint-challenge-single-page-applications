@@ -76,40 +76,6 @@ export default function Form(props) {
         {/* <div>{errors.password}</div>
         <div>{errors.agree}</div>  */}
       </div>
-      {/* <form onSubmit={submit}>
-        <label>
-          Name
-          <input onChange={change} value={form.name} name="name" type="text" />
-        </label>
-        <label>
-          Email
-          <input
-            onChange={change}
-            value={form.email}
-            name="email"
-            type="email"
-          />
-        </label>
-        <label>
-          Password
-          <input
-            onChange={change}
-            value={form.password}
-            name="password"
-            type="password"
-          />
-        </label>
-        <label>
-          Terms Of Service<span> </span>
-          <input
-            onChange={change}
-            checked={form.agree}
-            name="agree"
-            type="checkbox"
-          />
-        </label>
-        <button disabled={disabled}>Submit!</button>
-      </form> */}
     </div>
   );
 }
