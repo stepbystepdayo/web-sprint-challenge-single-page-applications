@@ -1,10 +1,17 @@
 import React from "react";
+import { Router, Link, Switch } from "react-router-dom";
+import "./App.css";
 
 const App = () => {
   return (
     <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+      <nav>
+        <h1>Lambda Eats</h1>
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/help">Help</Link>
+        </div>
+      </nav>
     </>
   );
 };
