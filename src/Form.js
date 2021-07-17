@@ -67,8 +67,9 @@ export default function Form(props) {
             type="text"
           />
         </label>
+        <button id="order-button">Let's eat 🍕</button>
       </form>
-      <button>Let's eat 🍕</button>
+
       <div style={{ color: "red" }}>
         <div>{errors.name}</div>
         <div>{errors.size}</div>

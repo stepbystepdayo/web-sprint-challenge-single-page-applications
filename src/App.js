@@ -50,6 +50,8 @@ const App = () => {
   };
 
   const onSubmit = (event) => {
+    event.preventDefault();
+
     const newPizza = {
       name: form.name.trim(),
       size: form.size,
@@ -58,9 +60,15 @@ const App = () => {
       pepperoni: form.pepperoni,
       special: form.special,
     };
-    axios.post("https://reqres.in/", newPizza).then((response) => {
-      setForm(initialForm);
-    });
+    console.log(newPizza);
+
+    axios
+      .post(`https://reqres.in/api/orders`, newPizza)
+      .then((response) => {
+        setForm(initialForm);
+        console.log(response);
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
