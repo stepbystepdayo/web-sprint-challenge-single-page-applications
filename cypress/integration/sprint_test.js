@@ -16,9 +16,6 @@ describe("Testing MVP", () => {
   const pepperoni = () => cy.get("input[name=pepperoni]");
   const submitButton = () => cy.get("button");
 
-  it("Adding text to the box", () => {
-    nameInput().should("exist");
-  });
   it("can type inside the name", () => {
     nameInput()
       .should("have.value", "")
@@ -40,5 +37,6 @@ describe("Testing MVP", () => {
     spinach().check();
     pepperoni().check();
     submitButton().click();
+    nameInput().should("have.value", "");
   });
 });

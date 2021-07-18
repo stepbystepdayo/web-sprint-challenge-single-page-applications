@@ -12,12 +12,23 @@ export default function Form(props) {
       <form id="pizza-form" onSubmit={submit}>
         <label>
           Name{" "}
-          <input onChange={change} id="name-input" name="name" type="text" />
+          <input
+            onChange={change}
+            id="name-input"
+            name="name"
+            type="text"
+            value={form.name}
+          />
         </label>
         <label>
           Select The Pizza Size!
           <br />
-          <select onChange={change} id="size-dropdown" name="size">
+          <select
+            onChange={change}
+            id="size-dropdown"
+            name="size"
+            value={form.size}
+          >
             <option>--Select the pizza size--</option>
             <option value="large">Large</option>
             <option value="medium">Medium</option>
@@ -63,7 +74,7 @@ export default function Form(props) {
           Pepperoni
         </label>
         <label>
-          Speacial Request
+          Special Request
           <br />
           <input
             className="box"
@@ -71,6 +82,7 @@ export default function Form(props) {
             id="special-text"
             name="special"
             type="text"
+            value={form.special}
           />
         </label>
         <button id="order-button">Let's eat 🍕</button>
